@@ -12,10 +12,6 @@
         <form method="POST">
             {% csrf_token %}
             {{form.as_p}}
-            <div class="form-group">
-                <label for="fname">First Name</label>
-                <input type="text" class="form-control" id="fname" placeholder="Enter your first name" required>
-            </div><br>
         </form>
         <input type="submit" name="Add">
     </center>
