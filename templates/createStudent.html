@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Django DRUD</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+<body>
+    <pre><center>
+        <h1>Student details:</h1>
+        <!-- <h3>{{context}}</h3> -->
+        <form method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" class="form-control" id="fname" placeholder="Enter your first name" required>
+            </div><br>
+        </form>
+        <input type="submit" name="Add">
+    </center>
+    </pre>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Create</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+    <h2>Create Student</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" class="form-control" id="fname" placeholder="Enter your first name" required>
+        </div><br>
+        <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" class="form-control" id="lname" placeholder="Enter your last name"required>
+        </div><br>
+        <div class="form-group">
+          <label for="birthDate">D.O.B</label>
+          <input type="date" class="form-control" id="birthDate" placeholder="Enter date of birth" required>
+        </div><br>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <textarea class="form-control" id="subject" placeholder="Subjects Description"></textarea>
+        </div><br>
+        <div class="form-group">
+            <label for="roll_num">Roll Number</label>
+            <input type="text" class="form-control" id="roll_num" placeholder="Enter your roll number" required>
+        </div><br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
+</body>
+</html> -->
